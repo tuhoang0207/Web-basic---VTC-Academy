@@ -47,6 +47,10 @@
     </blockquote>
     <input type="radio" name="gr1" /> Male
     <input type="radio" name="gr1" /> Female
+    <input type="button" value="submit" />
+    <input type="color" name="" id="" />
+    <input type="text" />
+    <input type="password" name="" id="" />
     <marquee> Welcome</marquee>
 
     <ul>
@@ -65,11 +69,20 @@
       alt="this is a photo"
     />
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VQtopOUQExw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <<<<<<< HEAD
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/VQtopOUQExw"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
 
     <audio controls>
-      <source src="horse.ogg" type="audio/ogg">
-      <source src="horse.mp3" type="audio/mpeg">
+      <source src="horse.ogg" type="audio/ogg" />
+      <source src="horse.mp3" type="audio/mpeg" />
       Your browser does not support the audio tag.
     </audio>
 
@@ -77,13 +90,49 @@
 
     <canvas id="myCanvas">
       Your browser does not support the canvas tag.
-      </canvas>
-      
-      <script>
+    </canvas>
+
+    <script>
       let canvas = document.getElementById("myCanvas");
       let ctx = canvas.getContext("2d");
       ctx.fillStyle = "#FF0000";
       ctx.fillRect(0, 0, 80, 80);
-      </script>
+    </script>
+
+    <select>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
   </body>
 </html>

@@ -55,10 +55,35 @@
       <li>3</li>
     </ul>
 
+    <ol>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ol>
     <img
       src="https://img.freepik.com/free-photo/erawan-waterfall-autumn-thailand-beautiful-waterfall-with-emerald-pool-nature_335224-777.jpg?w=2000"
       alt="this is a photo"
     />
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VQtopOUQExw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <audio controls>
+      <source src="horse.ogg" type="audio/ogg">
+      <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+
+    <button type="button">Click Me!</button>
+
+    <canvas id="myCanvas">
+      Your browser does not support the canvas tag.
+      </canvas>
+      
+      <script>
+      let canvas = document.getElementById("myCanvas");
+      let ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(0, 0, 80, 80);
+      </script>
   </body>
 </html>

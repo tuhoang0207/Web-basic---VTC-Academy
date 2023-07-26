@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> index</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h2>Student Register form</h2>
+
+    <div class="container">
+        <f action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Full Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="fulltname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="age">Age</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="age" name="age" placeholder="Your age..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="avatar">Avatar</label>
+                </div>
+                <div class="col-75">
+                    <input type="file" accept="image/*" class="uploadFile" name="avatar" placeholder="Your last name..">
+                    <img class="blah" src="#" alt="your image" hidden/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="attachCV">Your CV</label>
+                </div>
+                <div class="col-75">
+                    <input type="file" class="uploadFile" name="attachCV" placeholder="Your last name..">
+                    <img class="blah" src="#" alt="your image" hidden/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="rating">Rating</label>
+                </div>
+                <div class="col-75">
+                      <form class="rating">
+                <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+            </form>
+                </div>
+              
+            </div>
+            
+
+            <br>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+    </div>
+<script src="main.js"></script>
+</body>
+
+</html>
